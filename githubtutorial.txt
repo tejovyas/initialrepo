@@ -1,0 +1,657 @@
+login as: vagrant
+Authenticating with public key "imported-openssh-key"
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+New release '14.04.5 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Welcome to your Vagrant-built virtual machine.
+Last login: Thu Nov  3 21:20:16 2016 from 127.0.0.1
+vagrant@precise64:~$ ssh
+ssh            ssh-agent      ssh-copy-id    ssh-import-id  ssh-keyscan
+ssh-add        ssh-argv0      sshd           ssh-keygen     ssh-vulnkey
+vagrant@precise64:~$ ssh
+ssh            ssh-agent      ssh-copy-id    ssh-import-id  ssh-keyscan
+ssh-add        ssh-argv0      sshd           ssh-keygen     ssh-vulnkey
+vagrant@precise64:~$ ssh
+ssh            ssh-agent      ssh-copy-id    ssh-import-id  ssh-keyscan
+ssh-add        ssh-argv0      sshd           ssh-keygen     ssh-vulnkey
+vagrant@precise64:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): ^C
+vagrant@precise64:~$ mkdir github
+vagrant@precise64:~$ ls
+efl-1.17.1-1.el7.1.x86_64.rpm        github
+efl-devel-1.17.1-1.el7.1.x86_64.rpm  postinstall.sh
+epel-release-7-8.noarch.rpm
+vagrant@precise64:~$ cd github/
+vagrant@precise64:~/github$ pwd
+/home/vagrant/github
+vagrant@precise64:~/github$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): /home/vagrant/g                                                                                                             ithub/babbugithub
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/vagrant/github/babbugithub.
+Your public key has been saved in /home/vagrant/github/babbugithub.pub.
+The key fingerprint is:
+3a:6f:1e:0f:06:e6:d7:7a:78:54:73:fe:de:6b:11:35 vagrant@precise64
+The key's randomart image is:
++--[ RSA 2048]----+
+|                 |
+|               E.|
+|                o|
+|            o .. |
+|      o S  . +  .|
+|     o o ..   .. |
+|      + =o.    ..|
+|       =o=o    .o|
+|       o+o.   .o+|
++-----------------+
+vagrant@precise64:~/github$ ls -lrt
+total 8
+-rw-r--r-- 1 vagrant vagrant  399 Nov  6 02:12 babbugithub.pub
+-rw------- 1 vagrant vagrant 1675 Nov  6 02:12 babbugithub
+vagrant@precise64:~/github$ cat babbugithub.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDD5nyHXisyNy0Ap2xXhR+8Bt7h+K6ucfpmz0kuItpG                                                                                                             zAL8odRiGzZKwSayz9xp7T40Nt8YO6h2ndtVWm8czClEwrGouZ8SqigMo6NlOO+LQYqzq8r9pWkZR65C                                                                                                             Bo7jgJ2yGfDdeeqOlbA48p+ZCFJutyxcx6DFkb7IDiFpC5RIDyCU5Fssk5MwQiRWAGfu1rpHTl4hlrpl                                                                                                             YllOGdr/4b8z9GknmAclbCbh3HQh9VOuew1m9iFkpmW1OHDN/4Svtu7taWS3S7kbKfNCKv01BFNN6ddu                                                                                                             Bxnc+ce+dhR74l+0dulRsJpKTYFpvzc4GwjXCQOSnA2sG8yqkNXAbshtZ7oJ vagrant@precise64
+vagrant@precise64:~/github$ ^C
+vagrant@precise64:~/github$ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDD5nyHXisyNy0A                                                                                                             p2xXhR+8Bt7h+K6ucfpmz0kuItpGzAL8odRiGzZKwSayz9xp7T40Nt8YO6h2ndtVWm8czClEwrGouZ8S                                                                                                             qigMo6NlOO+LQYqzq8r9pWkZR65CBo7jgJ2yGfDdeeqOlbA48p+ZCFJutyxcx6DFkb7IDiFpC5RIDyCU                                                                                                             5Fssk5MwQiRWAGfu1rpHTl4hlrplYllOGdr/4b8z9GknmAclbCbh3HQh9VOuew1m9iFkpmW1OHDN/4Sv                                                                                                             tu7taWS3S7kbKfNCKv01BFNN6dduBxnc+ce+dhR74l+0dulRsJpKTYFpvzc4GwjXCQOSnA2sG8yqkNXA                                                                                                             bshtZ7oJ vagrant@precise64
+ssh-rsa: command not found
+vagrant@precise64:~/github$ ls
+babbugithub  babbugithub.pub
+vagrant@precise64:~/github$ cat babbugithub
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAw+Z8h14rMjctAKdsV4UfvAbe4fiurnH6Zs9JLiLaRswC/KHU
+Yhs2SsEmss/cae0+NDbfGDuodp3bVVpvHMwpRMKxqLmfEqooDKOjZTjvi0GKs6vK
+/aVpGUeuQgaO44Cdshnw3XnqjpWwOPKfmQhSbrcsXMegxZG+yA4haQuUSA8glORb
+LJOTMEIkVgBn7ta6R05eIZa6ZWJZThna/+G/M/RpJ5gHJWwm4dx0IfVTrnsNZvYh
+ZKZltThwzf+Er7bu7Wlkt0u5GynzQir9NQRTTenXbgcZ3PnHvnYUe+JftHbpUbCa
+Sk2Bab83OBsI1wkDkpwNrBvMqpDVwG7IbWe6CQIDAQABAoIBAHxTMoTWhqN/0Nex
+aVjB67nwwlK2+GVNgJTuyIq3I7/6iYq7SYZZrsMSgfTJZiDzp56LlFpUwj1FQYWR
+tyKXjzlMNmPWKdY2luQulewPjjbaiaQtSs5ew6x/iV/tuZE4dtwpCmwEi4+iAAyk
+LhV46pfJOCZJqwa30FQ2Y42/A4QWuVnY9HHFO6MDVj7E0az+twQ+pT5FMwej7H/4
+VcEvHOcAzPX56sQXql4HYiy5FqKUE3XZ7ayHzrW1peZnf6nEYEwmobVARpxQ6PFO
+Be5vExwMQi71sBRyUOu/KsKK1iX08PfZF3j0uMPRnuNGF+AKOg1McTEnI3ybZzVS
+y3NS9WECgYEA4rIIUatn8WKn1r4KjKWWId4Iy7cUMKxMnKrmJJvd2ZGuurFLd5PQ
+az3EBaeanD2MX6XW+51djle32zEpG9e9b2Faw3czr6OvkpJRkxAbmghDJ4fzxO0D
+RXuFLIIindZx+2Z0jz/h5MlyVrKbJ0GmmQFh8Jn7Dp/mZtNplV0IeScCgYEA3Tlc
+ROu3SxbtguhmasLS9j6xf1RvbL1sq22/ICY87dHBAP8LzipWKn62GPi75WixScjq
+7mSGLLa/fcFjykhESAzTs9ba9I+CniAGYCuTLxWx7L1nZAp9GT51qsJq9hs0svLn
+QXBFyOPLQpPyDMdZsBjxP069l9uAHMnmUjIDUU8CgYAaGFRM0mZMqwaW+ZlNR2JY
+064/hPuV/r9y6VlErYyEFvj+FJqTUTiUn6+I1xo9EfiuqfBtVlgGoqJPYQFSaysr
+PxGrnnUcqsLzJFSvkRMcUAcq7cNpz76oqOdTkEdb0+ua/Ng+BSSDqYy33iduBWig
+BEC56X+010M2Yu+seeEX0QKBgEfEjQ963OrKVGEsndUywRfLvO+O59sCFNgEcYWv
+ggKxEokNNLo8d9mvY8n0H5jL/v/t43FVQUYOP08/xuzfxu8M4j0sjbnbOMetogPe
+/w++XQttYrZMxMrEvY2ZJvQSXWVUcfuDvc/vPoip0FOe9JSxcspT9CPovMYaJdMy
+kGr3AoGAcbPGkk/0hh9UNwd8UM/X9INTBg1j7jqkPN8iZVRF96ZSqvTvVDrioHyC
+WnMSWc6S9EOvWVFJHv24pG45XCxN/vSHLjKxB+h1Pq7duPqVzBLcOcYtT31bxb+Y
+LaOLFOu0kA2+rVgIKEHjwZGnxpiEFUAisteh66njLQM60NAUgXM=
+-----END RSA PRIVATE KEY-----
+vagrant@precise64:~/github$ ls
+babbugithub  babbugithub.pub
+vagrant@precise64:~/github$
+vagrant@precise64:~/github$
+vagrant@precise64:~/github$
+vagrant@precise64:~/github$
+vagrant@precise64:~/github$
+vagrant@precise64:~/github$
+vagrant@precise64:~/github$
+vagrant@precise64:~/github$ pwd
+/home/vagrant/github
+vagrant@precise64:~/github$ ls
+babbugithub  babbugithub.pub
+vagrant@precise64:~/github$ cd.
+No command 'cd.' found, did you mean:
+ Command 'cdb' from package 'tinycdb' (main)
+ Command 'cdo' from package 'cdo' (universe)
+ Command 'cdi' from package 'cdo' (universe)
+ Command 'cdv' from package 'codeville' (universe)
+ Command 'cdw' from package 'cdw' (universe)
+ Command 'cdp' from package 'irpas' (multiverse)
+ Command 'cd5' from package 'cd5' (universe)
+cd.: command not found
+vagrant@precise64:~/github$ cd..
+cd..: command not found
+vagrant@precise64:~/github$ cd
+vagrant@precise64:~$ mkdir ansi
+vagrant@precise64:~$ cd ansi/
+vagrant@precise64:~/ansi$ git clone https://github.com/tejovyas/ansitraining.git
+The program 'git' is currently not installed.  You can install it by typing:
+sudo apt-get install git
+vagrant@precise64:~/ansi$ sudo apt-get install git
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following extra packages will be installed:
+  git-man liberror-perl patch
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-arch git-cvs git-svn git-email git-gui gitk gitweb diffutils-doc
+The following NEW packages will be installed:
+  git git-man liberror-perl patch
+0 upgraded, 4 newly installed, 0 to remove and 190 not upgraded.
+Need to get 6,839 kB of archives.
+After this operation, 15.4 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main liberror-perl all 0.17-1 [23.8 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main git-man all 1:1.7.9.5-1ubuntu0.3 [632 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main git amd64 1:1.7.9.5-1ubuntu0.3 [6,103 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main patch amd64 2.6.1-3ubuntu0.1 [80.0 kB]
+Fetched 6,839 kB in 5s (1,162 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 52522 files and directories currently installed.)
+Unpacking liberror-perl (from .../liberror-perl_0.17-1_all.deb) ...
+Selecting previously unselected package git-man.
+Unpacking git-man (from .../git-man_1%3a1.7.9.5-1ubuntu0.3_all.deb) ...
+Selecting previously unselected package git.
+Unpacking git (from .../git_1%3a1.7.9.5-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package patch.
+Unpacking patch (from .../patch_2.6.1-3ubuntu0.1_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up liberror-perl (0.17-1) ...
+Setting up git-man (1:1.7.9.5-1ubuntu0.3) ...
+Setting up git (1:1.7.9.5-1ubuntu0.3) ...
+Setting up patch (2.6.1-3ubuntu0.1) ...
+vagrant@precise64:~/ansi$ git clone https://github.com/tejovyas/ansitraining.git
+Cloning into 'ansitraining'...
+warning: You appear to have cloned an empty repository.
+vagrant@precise64:~/ansi$ ls
+ansitraining
+vagrant@precise64:~/ansi$ cd ansitraining/
+vagrant@precise64:~/ansi/ansitraining$ vi ansitutorial.yml
+vagrant@precise64:~/ansi/ansitraining$ vi ntp.conf.j2
+vagrant@precise64:~/ansi/ansitraining$ ansible-playbook ansitutorial.yml
+ERROR: become is not a legal parameter in an Ansible Playbook
+vagrant@precise64:~/ansi/ansitraining$ vi ansitutorial.yml
+vagrant@precise64:~/ansi/ansitraining$ vi ansitutorial.yml
+vagrant@precise64:~/ansi/ansitraining$ ansible-playbook ansitutorial.yml
+ERROR: become is not a legal parameter in an Ansible Playbook
+vagrant@precise64:~/ansi/ansitraining$ ansible-playbook ansitutorial.yml
+ERROR: become is not a legal parameter in an Ansible Playbook
+vagrant@precise64:~/ansi/ansitraining$ vi ansitutorial.yml
+vagrant@precise64:~/ansi/ansitraining$ vi ansitutorial.yml
+vagrant@precise64:~/ansi/ansitraining$ ansible-playbook ansitutorial.yml
+
+PLAY [local] ******************************************************************
+skipping: no hosts matched
+
+PLAY RECAP ********************************************************************
+
+vagrant@precise64:~/ansi/ansitraining$ vi ansitutorial.yml
+vagrant@precise64:~/ansi/ansitraining$ ansible-playbook ansitutorial.yml
+
+PLAY [localhost] **************************************************************
+
+GATHERING FACTS ***************************************************************
+fatal: [127.0.0.1] => SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue
+
+TASK: [Install ntp] ***********************************************************
+FATAL: no hosts matched or all hosts have already failed -- aborting
+
+
+PLAY RECAP ********************************************************************
+           to retry, use: --limit @/home/vagrant/ansitutorial.retry
+
+127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0
+
+vagrant@precise64:~/ansi/ansitraining$ pwd
+/home/vagrant/ansi/ansitraining
+vagrant@precise64:~/ansi/ansitraining$ sudo su
+root@precise64:/home/vagrant/ansi/ansitraining# ansible-playbook ansitutorial.yml
+
+PLAY [localhost] **************************************************************
+
+GATHERING FACTS ***************************************************************
+ok: [127.0.0.1]
+
+TASK: [Install ntp] ***********************************************************
+failed: [127.0.0.1] => {"failed": true, "parsed": false}
+invalid output was: Traceback (most recent call last):
+  File "/root/.ansible/tmp/ansible-1478449572.88-194153386006550/yum", line 26, in <module>
+    import yum
+ImportError: No module named yum
+
+
+FATAL: all hosts have already failed -- aborting
+
+PLAY RECAP ********************************************************************
+           to retry, use: --limit @/root/ansitutorial.retry
+
+127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=1
+
+root@precise64:/home/vagrant/ansi/ansitraining# ssh vagrant@127.0.0.1^C
+root@precise64:/home/vagrant/ansi/ansitraining# vi ansitutorial.yml
+root@precise64:/home/vagrant/ansi/ansitraining# ansible-playbook ansitutorial.yml
+
+PLAY [localhost] **************************************************************
+
+GATHERING FACTS ***************************************************************
+ok: [127.0.0.1]
+
+TASK: [Install ntp] ***********************************************************
+ok: [127.0.0.1]
+
+TASK: [Configure ntp file] ****************************************************
+fatal: [127.0.0.1] => {'msg': "One or more undefined variables: 'ntpserver' is undefined", 'failed': True}
+fatal: [127.0.0.1] => {'msg': "One or more undefined variables: 'ntpserver' is undefined", 'failed': True}
+
+FATAL: all hosts have already failed -- aborting
+
+PLAY RECAP ********************************************************************
+           to retry, use: --limit @/root/ansitutorial.retry
+
+127.0.0.1                  : ok=2    changed=0    unreachable=1    failed=0
+
+root@precise64:/home/vagrant/ansi/ansitraining# vi ansitutorial.yml
+root@precise64:/home/vagrant/ansi/ansitraining# vi ntp.conf.j2
+root@precise64:/home/vagrant/ansi/ansitraining# ansible-playbook ansitutorial.yml --extra-vars "ntpserver=us.pool.ntp.org"
+
+PLAY [localhost] **************************************************************
+
+GATHERING FACTS ***************************************************************
+ok: [127.0.0.1]
+
+TASK: [Install ntp] ***********************************************************
+ok: [127.0.0.1]
+
+TASK: [Configure ntp file] ****************************************************
+changed: [127.0.0.1]
+
+TASK: [Start the ntp service] *************************************************
+failed: [127.0.0.1] => {"failed": true}
+msg: service not found: ntpd
+
+FATAL: all hosts have already failed -- aborting
+
+PLAY RECAP ********************************************************************
+           to retry, use: --limit @/root/ansitutorial.retry
+
+127.0.0.1                  : ok=3    changed=1    unreachable=0    failed=1
+
+root@precise64:/home/vagrant/ansi/ansitraining# which ntp
+root@precise64:/home/vagrant/ansi/ansitraining# cd ..
+root@precise64:/home/vagrant/ansi# less ansitraining/
+ansitutorial.yml  .git/             ntp.conf.j2
+root@precise64:/home/vagrant/ansi# less ansitraining/ansitutorial.yml
+root@precise64:/home/vagrant/ansi# apt-get install ntp
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Suggested packages:
+  ntp-doc
+The following packages will be upgraded:
+  ntp
+1 upgraded, 0 newly installed, 0 to remove and 189 not upgraded.
+Need to get 617 kB of archives.
+After this operation, 6,144 B of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main ntp amd64 1:4.2.6.p3+dfsg-1ubuntu3.11 [617 kB]
+Fetched 617 kB in 0s (750 kB/s)
+(Reading database ... 53180 files and directories currently installed.)
+Preparing to replace ntp 1:4.2.6.p3+dfsg-1ubuntu3.1 (using .../ntp_1%3a4.2.6.p3+dfsg-1ubuntu3.11_amd64.deb) ...
+ * Stopping NTP server ntpd                                                                                                                                                           [ OK ]
+Unpacking replacement ntp ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+ureadahead will be reprofiled on next reboot
+Setting up ntp (1:4.2.6.p3+dfsg-1ubuntu3.11) ...
+Installing new version of config file /etc/cron.daily/ntp ...
+ * Starting NTP server ntpd                                                                                                                                                                  /usr/sbin/ntpd: relocation error: /usr/sbin/ntpd: symbol CRYPTO_memcmp, version OPENSSL_1.0.0 not defined in file libcrypto.so.1.0.0 with link time reference
+                                                                                                                                                                                      [fail]
+invoke-rc.d: initscript ntp, action "start" failed.
+dpkg: error processing ntp (--configure):
+ subprocess installed post-installation script returned error exit status 127
+Errors were encountered while processing:
+ ntp
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+root@precise64:/home/vagrant/ansi# ping us.pool.ntp.org
+PING us.pool.ntp.org (198.55.111.50) 56(84) bytes of data.
+64 bytes from services.quadranet.com (198.55.111.50): icmp_req=1 ttl=46 time=94.3 ms
+64 bytes from services.quadranet.com (198.55.111.50): icmp_req=2 ttl=46 time=87.1 ms
+64 bytes from services.quadranet.com (198.55.111.50): icmp_req=3 ttl=46 time=91.8 ms
+64 bytes from services.quadranet.com (198.55.111.50): icmp_req=4 ttl=46 time=96.5 ms
+^C
+--- us.pool.ntp.org ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+rtt min/avg/max/mdev = 87.103/92.471/96.546/3.535 ms
+root@precise64:/home/vagrant/ansi# /usr/sbin/ntpd
+/usr/sbin/ntpd: relocation error: /usr/sbin/ntpd: symbol CRYPTO_memcmp, version OPENSSL_1.0.0 not defined in file libcrypto.so.1.0.0 with link time reference
+root@precise64:/home/vagrant/ansi# apt-get install openssl
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be upgraded:
+  openssl
+1 upgraded, 0 newly installed, 0 to remove and 188 not upgraded.
+1 not fully installed or removed.
+Need to get 524 kB of archives.
+After this operation, 5,120 B of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main openssl amd64 1.0.1-4ubuntu5.38 [524 kB]
+Fetched 524 kB in 0s (1,063 kB/s)
+(Reading database ... 53180 files and directories currently installed.)
+Preparing to replace openssl 1.0.1-4ubuntu3 (using .../openssl_1.0.1-4ubuntu5.38_amd64.deb) ...
+Unpacking replacement openssl ...
+Processing triggers for man-db ...
+Setting up ntp (1:4.2.6.p3+dfsg-1ubuntu3.11) ...
+ * Starting NTP server ntpd                                                                                                                                                                  /usr/sbin/ntpd: relocation error: /usr/sbin/ntpd: symbol CRYPTO_memcmp, version OPENSSL_1.0.0 not defined in file libcrypto.so.1.0.0 with link time reference
+                                                                                                                                                                                      [fail]
+invoke-rc.d: initscript ntp, action "start" failed.
+dpkg: error processing ntp (--configure):
+ subprocess installed post-installation script returned error exit status 127
+Setting up openssl (1.0.1-4ubuntu5.38) ...
+Errors were encountered while processing:
+ ntp
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+root@precise64:/home/vagrant/ansi# ls
+ansitraining
+root@precise64:/home/vagrant/ansi# cd ansitraining/
+root@precise64:/home/vagrant/ansi/ansitraining# l
+ansitutorial.yml  ntp.conf.j2
+root@precise64:/home/vagrant/ansi/ansitraining# vi ansitutorial.yml
+root@precise64:/home/vagrant/ansi/ansitraining# vi ansitutorial.yml
+root@precise64:/home/vagrant/ansi/ansitraining# vi ansitutorial.yml
+root@precise64:/home/vagrant/ansi/ansitraining# vi ansitutorial.yml
+root@precise64:/home/vagrant/ansi/ansitraining# ls
+ansitutorial.yml  ntp.conf.j2
+root@precise64:/home/vagrant/ansi/ansitraining# vi ntp.conf.j2
+root@precise64:/home/vagrant/ansi/ansitraining# vi ntp.conf.j2
+root@precise64:/home/vagrant/ansi/ansitraining# vi ntp.conf.j2
+root@precise64:/home/vagrant/ansi/ansitraining# vi ansitutorial.yml
+root@precise64:/home/vagrant/ansi/ansitraining# ansible-playbook ansitutorial.yml
+ERROR: Syntax Error while loading YAML script, ansitutorial.yml
+Note: The error may actually appear before this position: line 4, column 10
+
+ -hosts: local
+   become: true
+         ^
+root@precise64:/home/vagrant/ansi/ansitraining# vi ansitutorial.yml
+root@precise64:/home/vagrant/ansi/ansitraining# cd\
+> ^C
+root@precise64:/home/vagrant/ansi/ansitraining# cd
+root@precise64:~# ls
+ansitutorial.retry  host1  nginx.retry  nginx.yml
+root@precise64:~# clear
+root@precise64:~# pwd
+/root
+root@precise64:~# ls-lrt
+ls-lrt: command not found
+root@precise64:~# ls
+ansitutorial.retry  host1  nginx.retry  nginx.yml
+root@precise64:~# git
+usage: git [--version] [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [-c name=value] [--help]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+See 'git help <command>' for more information on a specific command.
+root@precise64:~# git clone https://github.com/tejovyas/initialrepo.git
+Cloning into 'initialrepo'...
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 1), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+root@precise64:~# ls
+ansitutorial.retry  host1  initialrepo  nginx.retry  nginx.yml
+root@precise64:~# cd initialrepo/
+root@precise64:~/initialrepo# LS
+The program 'LS' is currently not installed.  You can install it by typing:
+apt-get install sl
+root@precise64:~/initialrepo# LS
+The program 'LS' is currently not installed.  You can install it by typing:
+apt-get install sl
+root@precise64:~/initialrepo# ls
+README.md
+root@precise64:~/initialrepo# vi gitlx
+root@precise64:~/initialrepo# ls
+gitlx  README.md
+root@precise64:~/initialrepo# rm gitlx gitlxmul.py
+rm: cannot remove `gitlxmul.py': No such file or directory
+root@precise64:~/initialrepo# ls
+README.md
+root@precise64:~/initialrepo# vi gitlx.py
+root@precise64:~/initialrepo# ./gitlx.py
+bash: ./gitlx.py: Permission denied
+root@precise64:~/initialrepo# apt-get python
+E: Invalid operation python
+root@precise64:~/initialrepo# apt
+No command 'apt' found, did you mean:
+ Command 'aptd' from package 'aptdaemon' (main)
+ Command 'xapt' from package 'xapt' (universe)
+ Command 'opt' from package 'llvm' (universe)
+ Command 'apm' from package 'apmd' (main)
+ Command 'atp' from package 'atp' (universe)
+ Command 'ppt' from package 'bsdgames' (universe)
+ Command 'apf' from package 'apf-firewall' (universe)
+ Command 'apg' from package 'apg' (main)
+ Command 'gpt' from package 'gpt' (universe)
+ Command 'ant' from package 'ant' (main)
+ Command 'ant' from package 'ant1.7' (universe)
+ Command 'at' from package 'at' (main)
+ Command 'pat' from package 'dist' (universe)
+ Command 'aft' from package 'aft' (universe)
+apt: command not found
+root@precise64:~/initialrepo# yum install python
+The program 'yum' is currently not installed.  You can install it by typing:
+apt-get install yum
+root@precise64:~/initialrepo# apt-get install yum
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following extra packages will be installed:
+  liblua5.1-0 libnspr4 libnss3 librpm2 librpmbuild2 librpmio2 librpmsign0 libsqlite0 python-libxml2 python-pycurl python-rpm python-sqlite python-sqlitecachec python-support
+  python-urlgrabber rpm rpm-common rpm2cpio
+Suggested packages:
+  libcurl4-gnutls-dev python-pycurl-dbg python-sqlite-dbg alien elfutils rpm-i18n
+The following NEW packages will be installed:
+  liblua5.1-0 libnspr4 libnss3 librpm2 librpmbuild2 librpmio2 librpmsign0 libsqlite0 python-libxml2 python-pycurl python-rpm python-sqlite python-sqlitecachec python-support
+  python-urlgrabber rpm rpm-common rpm2cpio yum
+0 upgraded, 19 newly installed, 0 to remove and 188 not upgraded.
+1 not fully installed or removed.
+Need to get 3,276 kB of archives.
+After this operation, 10.5 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main liblua5.1-0 amd64 5.1.4-12ubuntu1.1 [172 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libnspr4 amd64 4.12-0ubuntu0.12.04.1 [141 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libnss3 amd64 2:3.23-0ubuntu0.12.04.1 [1,204 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main librpmio2 amd64 4.9.1.1-1ubuntu0.3 [82.2 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main rpm-common amd64 4.9.1.1-1ubuntu0.3 [20.2 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main librpm2 amd64 4.9.1.1-1ubuntu0.3 [186 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main librpmbuild2 amd64 4.9.1.1-1ubuntu0.3 [69.9 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main librpmsign0 amd64 4.9.1.1-1ubuntu0.3 [8,848 B]
+Get:9 http://us.archive.ubuntu.com/ubuntu/ precise/universe libsqlite0 amd64 2.8.17-7fakesync1build1 [189 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main python-libxml2 amd64 2.7.8.dfsg-5.1ubuntu4.15 [187 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu/ precise/universe python-sqlite amd64 1.0.1-9 [32.4 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu/ precise/universe python-support all 1.0.14ubuntu2 [26.1 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu/ precise/main python-pycurl amd64 7.19.0-4ubuntu3 [49.2 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu/ precise/main python-urlgrabber all 3.9.1-4ubuntu2 [48.5 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main rpm2cpio amd64 4.9.1.1-1ubuntu0.3 [5,170 B]
+Get:16 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main rpm amd64 4.9.1.1-1ubuntu0.3 [157 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu/ precise-updates/universe python-rpm amd64 4.9.1.1-1ubuntu0.3 [41.8 kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu/ precise/universe python-sqlitecachec amd64 1.1.2-1ubuntu3 [20.8 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu/ precise/universe yum all 3.2.25-1ubuntu2 [634 kB]
+Fetched 3,276 kB in 1s (2,203 kB/s)
+Selecting previously unselected package liblua5.1-0.
+(Reading database ... 53180 files and directories currently installed.)
+Unpacking liblua5.1-0 (from .../liblua5.1-0_5.1.4-12ubuntu1.1_amd64.deb) ...
+Selecting previously unselected package libnspr4.
+Unpacking libnspr4 (from .../libnspr4_4.12-0ubuntu0.12.04.1_amd64.deb) ...
+Selecting previously unselected package libnss3.
+Unpacking libnss3 (from .../libnss3_2%3a3.23-0ubuntu0.12.04.1_amd64.deb) ...
+Selecting previously unselected package librpmio2.
+Unpacking librpmio2 (from .../librpmio2_4.9.1.1-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package rpm-common.
+Unpacking rpm-common (from .../rpm-common_4.9.1.1-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package librpm2.
+Unpacking librpm2 (from .../librpm2_4.9.1.1-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package librpmbuild2.
+Unpacking librpmbuild2 (from .../librpmbuild2_4.9.1.1-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package librpmsign0.
+Unpacking librpmsign0 (from .../librpmsign0_4.9.1.1-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package libsqlite0.
+Unpacking libsqlite0 (from .../libsqlite0_2.8.17-7fakesync1build1_amd64.deb) ...
+Selecting previously unselected package python-libxml2.
+Unpacking python-libxml2 (from .../python-libxml2_2.7.8.dfsg-5.1ubuntu4.15_amd64.deb) ...
+Selecting previously unselected package python-sqlite.
+Unpacking python-sqlite (from .../python-sqlite_1.0.1-9_amd64.deb) ...
+Selecting previously unselected package python-support.
+Unpacking python-support (from .../python-support_1.0.14ubuntu2_all.deb) ...
+Selecting previously unselected package python-pycurl.
+Unpacking python-pycurl (from .../python-pycurl_7.19.0-4ubuntu3_amd64.deb) ...
+Selecting previously unselected package python-urlgrabber.
+Unpacking python-urlgrabber (from .../python-urlgrabber_3.9.1-4ubuntu2_all.deb) ...
+Selecting previously unselected package rpm2cpio.
+Unpacking rpm2cpio (from .../rpm2cpio_4.9.1.1-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package rpm.
+Unpacking rpm (from .../rpm_4.9.1.1-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package python-rpm.
+Unpacking python-rpm (from .../python-rpm_4.9.1.1-1ubuntu0.3_amd64.deb) ...
+Selecting previously unselected package python-sqlitecachec.
+Unpacking python-sqlitecachec (from .../python-sqlitecachec_1.1.2-1ubuntu3_amd64.deb) ...
+Selecting previously unselected package yum.
+Unpacking yum (from .../yum_3.2.25-1ubuntu2_all.deb) ...
+
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up ntp (1:4.2.6.p3+dfsg-1ubuntu3.11) ...
+ * Starting NTP server ntpd                                                                                                                                                                  /usr/sbin/ntpd: relocation error: /usr/sbin/ntpd: symbol CRYPTO_memcmp, version OPENSSL_1.0.0 not defined in file libcrypto.so.1.0.0 with link time reference
+                                                                                                                                                                                      [fail]
+invoke-rc.d: initscript ntp, action "start" failed.
+dpkg: error processing ntp (--configure):
+ subprocess installed post-installation script returned error exit status 127
+Setting up liblua5.1-0 (5.1.4-12ubuntu1.1) ...
+Setting up libnspr4 (4.12-0ubuntu0.12.04.1) ...
+Setting up libnss3 (2:3.23-0ubuntu0.12.04.1) ...
+Setting up librpmio2 (4.9.1.1-1ubuntu0.3) ...
+Setting up rpm-common (4.9.1.1-1ubuntu0.3) ...
+Setting up librpm2 (4.9.1.1-1ubuntu0.3) ...
+Setting up librpmbuild2 (4.9.1.1-1ubuntu0.3) ...
+Setting up librpmsign0 (4.9.1.1-1ubuntu0.3) ...
+Setting up libsqlite0 (2.8.17-7fakesync1build1) ...
+Setting up python-libxml2 (2.7.8.dfsg-5.1ubuntu4.15) ...
+Setting up python-sqlite (1.0.1-9) ...
+Setting up python-support (1.0.14ubuntu2) ...
+Setting up python-pycurl (7.19.0-4ubuntu3) ...
+Setting up python-urlgrabber (3.9.1-4ubuntu2) ...
+Setting up rpm2cpio (4.9.1.1-1ubuntu0.3) ...
+Setting up rpm (4.9.1.1-1ubuntu0.3) ...
+Setting up python-rpm (4.9.1.1-1ubuntu0.3) ...
+Setting up python-sqlitecachec (1.1.2-1ubuntu3) ...
+Setting up yum (3.2.25-1ubuntu2) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Processing triggers for python-support ...
+Errors were encountered while processing:
+ ntp
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+root@precise64:~/initialrepo# cd
+root@precise64:~# yum install python
+Setting up Install Process
+No package python available.
+Nothing to do
+root@precise64:~# yum install python
+Setting up Install Process
+No package python available.
+Nothing to do
+root@precise64:~# apt-get install python
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following extra packages will be installed:
+  python-minimal
+Suggested packages:
+  python-doc python-tk
+The following packages will be upgraded:
+  python python-minimal
+2 upgraded, 0 newly installed, 0 to remove and 186 not upgraded.
+1 not fully installed or removed.
+Need to get 197 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main python-minimal amd64 2.7.3-0ubuntu2.2 [29.7 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main python amd64 2.7.3-0ubuntu2.2 [168 kB]
+Fetched 197 kB in 0s (528 kB/s)
+(Reading database ... 53651 files and directories currently installed.)
+Preparing to replace python-minimal 2.7.3-0ubuntu2 (using .../python-minimal_2.7.3-0ubuntu2.2_amd64.deb) ...
+Unpacking replacement python-minimal ...
+Processing triggers for man-db ...
+Setting up python-minimal (2.7.3-0ubuntu2.2) ...
+(Reading database ... 53651 files and directories currently installed.)
+Preparing to replace python 2.7.3-0ubuntu2 (using .../python_2.7.3-0ubuntu2.2_amd64.deb) ...
+Unpacking replacement python ...
+Processing triggers for man-db ...
+Setting up ntp (1:4.2.6.p3+dfsg-1ubuntu3.11) ...
+ * Starting NTP server ntpd                                                                                                                                                                  /usr/sbin/ntpd: relocation error: /usr/sbin/ntpd: symbol CRYPTO_memcmp, version OPENSSL_1.0.0 not defined in file libcrypto.so.1.0.0 with link time reference
+                                                                                                                                                                                      [fail]
+invoke-rc.d: initscript ntp, action "start" failed.
+dpkg: error processing ntp (--configure):
+ subprocess installed post-installation script returned error exit status 127
+Setting up python (2.7.3-0ubuntu2.2) ...
+Errors were encountered while processing:
+ ntp
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+root@precise64:~# ls
+ansitutorial.retry  host1  initialrepo  nginx.retry  nginx.yml
+root@precise64:~# cd initialrepo/
+root@precise64:~/initialrepo# ls
+gitlx.py  README.md
+root@precise64:~/initialrepo# ./gitlx.py
+bash: ./gitlx.py: Permission denied
+root@precise64:~/initialrepo# ls-lrt
+ls-lrt: command not found
+root@precise64:~/initialrepo# chmod gitlx.py
+chmod: missing operand after `gitlx.py'
+Try `chmod --help' for more information.
+root@precise64:~/initialrepo# chmod --help
+Usage: chmod [OPTION]... MODE[,MODE]... FILE...
+  or:  chmod [OPTION]... OCTAL-MODE FILE...
+  or:  chmod [OPTION]... --reference=RFILE FILE...
+Change the mode of each FILE to MODE.
+
+  -c, --changes           like verbose but report only when a change is made
+      --no-preserve-root  do not treat `/' specially (the default)
+      --preserve-root     fail to operate recursively on `/'
+  -f, --silent, --quiet   suppress most error messages
+  -v, --verbose           output a diagnostic for every file processed
+      --reference=RFILE   use RFILE's mode instead of MODE values
+  -R, --recursive         change files and directories recursively
+      --help     display this help and exit
+      --version  output version information and exit
+
+Each MODE is of the form `[ugoa]*([-+=]([rwxXst]*|[ugo]))+'.
+
+Report chmod bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'chmod invocation'
+root@precise64:~/initialrepo# chmod 777 gitlx.py
+root@precise64:~/initialrepo# ./gitlx.py
+./gitlx.py: line 3: $'python program to find the\nmultiplication table (from 1 to 10)': command not found
+./gitlx.py: line 5: num: command not found
+./gitlx.py: line 11: syntax error near unexpected token `('
+./gitlx.py: line 11: `for i in range(1, 11):'
+root@precise64:~/initialrepo# pwd
+/root/initialrepo
+root@precise64:~/initialrepo#
